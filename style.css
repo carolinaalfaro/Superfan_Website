@@ -1,0 +1,250 @@
+body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	display: block;
+	background-color: #000000;
+}
+
+/* These are my divs that I utilized throughout my page */
+.title_row {
+	height: 14%;
+	width: 100%;
+	display: flex;
+}
+
+.second_row {
+	height: 43%;
+	width: 100%;
+	display: flex;
+}
+
+.all_div {
+	height: 100%;
+	width: 50%;
+	display: flex;
+}
+
+.poster_div {
+	height: 100%;
+	width: 40%;
+	display: flex;
+}
+
+.clip_div {
+	height: 75%;
+	width: 100%;
+	display: flex;
+	background-image: url("images/starry_background.jpg");
+	background-size: cover;
+	background-repeat: no repeat;
+}
+
+
+.quote_div {
+	height: calc(100%/4);
+	width: 100%;
+
+}
+.hide {
+	display:none;
+}
+
+.two_div {
+	height: 100%;
+	width: 60%;
+	display: block
+}
+
+.title_divs {
+	height: 100%;
+	width: 30%;
+}
+
+.title_center {
+	height: 100%;
+	width: 40%;
+}
+
+/* These are my text properties */
+p2 {
+    font-family: "Lobster";
+	font-size: 69px;
+	text-align: center;
+	color: #ffffff;
+}
+
+
+p {
+	font-family: "Lobster";
+	font-size: 20px;
+	text-align: center;
+	color: white;
+}
+
+/* Here are several UX features I used to enhance the features for my website.
+	I used the opaque, greyscale, hovering, and filter tool*/
+.grayscale {
+  filter: grayscale(45%);
+}
+img:hover {
+  filter: grayscale(0%);
+}
+
+.pointer {
+	cursor: pointer;
+}
+
+.grow {
+	transition: all .1s ease-in-out;
+}
+.grow:hover{
+	transform: scale(1.1);
+}
+
+#test {
+	filter:drop-shadow(8px 8px 10px gray);
+}
+
+.click:active {
+	filter: grayscale(100%);
+}
+
+/* colors */
+.dark-grey {background-color: #D3D3D3;}
+.black {background-color: #000000;}
+.white {background-color: #FFFFFF;}
+.light-grey {background-color: #D3D3D3;}
+
+/* This is my first breakpoint, in where I altered the height of the body
+	and other divs, meaning that more divs stacked on top of each other. 
+	Furthermore, the pixials of the text decreased */
+@media screen and (max-width: 1000px) {
+	body {
+		height: 148%;
+		width: 100%;
+		display: block;
+	}
+	
+	p2 {
+		font-family: "Lobster";
+		font-size: 46px;
+		text-align: center;
+	}
+	
+	p {
+		font-family: "Lobster";
+		font-size: 25px;
+		text-align: center;
+		color: white;
+	}
+		
+	.title_row {
+		height: 8%;
+		width: 100%;
+	}
+	.second_row {
+		height: 70%;
+		width: 100%;
+		display: block;
+	}
+	.all_div {
+		height: calc(100%/2);
+		width: 100%;
+		display: flex;
+	}
+	.poster_div {
+		height: 100%;
+		width: 40%;
+		display: flex;
+		order: 0;
+	}
+	.two_div {
+		height: 100%;
+		width: 60%;
+		display: block;
+		order: 1;
+	}
+}
+
+/* This is my second breakpoint code, the percent of the height increased
+	in the body because more divs are being stacked upon each other, however
+	the title percent decrease. Nothing disappeared, and the UX functions are still there */
+@media screen and (max-width: 680px) {
+	body {
+		height: 284%;
+		width: 100%;
+		display: block;
+	}
+
+	p2 {
+		font-family: "Lobster";
+		font-size: 40px;
+		text-align: center;
+	}
+	
+	p {
+		font-family: "Lobster";
+		font-size: 20px;
+		text-align: center;
+		color: white;
+	}
+	.title_row {
+		height: 4%;
+		width: 100%;
+	}
+	.second_row {
+		height: 70%;
+		width: 100%;
+		display: block;
+	}
+	.all_div {
+		display: flex;
+		flex-wrap: wrap;
+		height: 50%;
+		width: 100%;
+	}
+	.two_div {
+		height: 40%;
+		width: 100%;
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.poster_div {
+		height: 60%;
+		width: 100%;
+		display: flex;
+		order: 0;
+	}
+	.quote_div {
+		height: 30%;
+		width: 100%;
+		order: 1;
+	}
+	.clip_div {
+		height: 70%;
+		width: 100%;
+		display: flex;
+		order: 2;
+	}
+}
+
+/* The "center-horitzontal and vertical code are used for centering images */
+
+.center-horizontal {
+	align-items: center;
+	display: flex;
+}
+
+/* If you're using 'display: flex' this class can be used to easily center vertically! */
+.center-vertical {
+	justify-content: center;
+	display: flex;
+}
+
+/* Keep your image from overflowing it's parent DIV */
+.contain-image {
+	max-height: 75%;
+	max-width: 75%;
+}
+
