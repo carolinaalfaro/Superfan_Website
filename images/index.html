@@ -1,0 +1,93 @@
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Superfan</title>
+		<link rel="stylesheet" href="style.css" />
+		<link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet'>
+	</head>
+
+	<body>
+		<!-- This is my title code, that contains three main divs -->
+		<div class="title_row">
+			<div class ="title_divs center-horizontal center-vertical">
+				<img src="images/film_role.png" class="contain-image"/>
+			</div>
+			<div class ="title_center center-horizontal center-vertical">
+				<p2>Adam Sandler</p2>
+			</div>
+			<div class ="title_divs center-horizontal center-vertical">
+				<img src="images/film_role.png" class="contain-image"/>
+			</div>		
+		</div>
+		<!-- The second row contains two main other rows, essentially in each row there is the poster div
+				that presents the movie poster, and the all_divs that shows the clip_div, and quote divs. -->
+		<div class="second_row">
+			<div class="all_div black">
+				<div class="two_div black">
+					<div class="clip_div center-horizontal center-vertical">
+						<img src="images/jack_photo.jpg" class="contain-image grow pointer" onclick="jack(this)" id="test"/>					
+					</div>
+					<div class="quote_div black">
+						<p class="hide" id="jill_quote"> Jill: "It's not you - it's the chimichangas! They're making a run for the border."</p>
+					</div>	
+				</div>
+				<div class="poster_div dark-grey center-horizontal center-vertical" onclick="jill()">
+					<img src="images/jack_jill.jpg" class="contain-image pointer grow grayscale click"/>
+				</div>
+			</div>
+			<div class="all_div black">
+			<div class="poster_div dark-grey center-horizontal center-vertical" onclick="boy()">
+				<img src="images/water_boy.jpg" class="contain-image pointer grow grayscale click"/>			
+			</div>
+				<div class="two_div black">
+					<div class="clip_div center-horizontal center-vertical">
+						<img src="images/water_photo.jpg" class="contain-image grow pointer" onclick="water(this)" id="test"/>					
+					</div>
+					<div class="quote_div black">
+						<p class="hide" id="waterboy"> Bobby Boucher : "Mama says that alligators are ornery... 'cause they got all them teeth but no toothbrush."</p>					
+					</div>			
+				</div>
+			</div>
+		</div>
+		<div class="second_row">
+			<div class="all_div black">
+				<div class="two_div black">
+					<div class="clip_div center-horizontal center-vertical">
+						<img src="images/happy_photo.jpg" class="contain-image grow pointer" onclick="happyg(this)" id="test"/>
+					</div>
+					<div class="quote_div black">
+						<p class="hide" id="happygill"> Happy Gilmore: "Why don't you just go home? That's your home!" (Speaking to Golf Ball)</p>					
+					</div>
+				</div>
+				<div class="poster_div dark-grey center-horizontal center-vertical" onclick="happy()">
+					<img src="images/happy_gilmore.jpg" class="contain-image pointer grow grayscale click"/>
+				</div>
+			</div>
+			<div class="all_div black">
+				<div class="poster_div dark-grey center-horizontal center-vertical" onclick="up()">
+					<img src="images/grown_up_two.jpg" class="contain-image pointer grow grayscale click"/>
+				</div>
+				<div class="two_div black">
+					<div class="clip_div center-horizontal center-vertical">
+						<img src="images/grown_photo.PNG" class="contain-image grow pointer" onclick="grown(this)" id="test"/>
+					</div>
+					<div class="quote_div black">
+						<p class="hide" id="grownup"> Eric Lamonsoff:  "You just start with a burp, then you sniff with a sneeze, you get the going, and that triggers a fart, always." <br> Lenny Feder : "I did it! I burpsnarted! Yes!" </p>					
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<!-- These are my sound code, I used this code for when the user clicks on the movie poster and a quote from that specific movie appears, with the sound
+			the character behind it-->
+		<audio src="audio/movie1.wav" type="audio/wav" id="sound_jill"></audio>
+		<audio src="audio/movie2.wav" type="audio/wav" id="sound_happy"></audio>
+		<audio src="audio/movie3.wav" type="audio/wav" id="sound_water"></audio>
+		<audio src="audio/movie4.wav" type="audio/wav" id="sound_grown"></audio>
+		
+		<script src="script.js"></script>
+	</body>
+	
+</html>
