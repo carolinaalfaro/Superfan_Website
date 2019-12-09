@@ -25,12 +25,6 @@ body {
 	display: flex;
 }
 
-.poster_div {
-	height: 100%;
-	width: 40%;
-	display: flex;
-}
-
 .clip_div {
 	height: 75%;
 	width: 100%;
@@ -38,6 +32,12 @@ body {
 	background-image: url("images/starry_background.jpg");
 	background-size: cover;
 	background-repeat: no repeat;
+}
+
+.poster_div {
+	height: 100%;
+	width: 40%;
+	display: flex;
 }
 
 
@@ -84,11 +84,11 @@ p {
 
 /* Here are several UX features I used to enhance the features for my website.
 	I used the opaque, greyscale, hovering, and filter tool*/
-.grayscale {
-  filter: grayscale(45%);
+.click:active {
+	filter: grayscale(100%);
 }
-img:hover {
-  filter: grayscale(0%);
+.grayscale {
+	filter: grayscale(45%);
 }
 
 .pointer {
@@ -105,9 +105,8 @@ img:hover {
 #test {
 	filter:drop-shadow(8px 8px 10px gray);
 }
-
-.click:active {
-	filter: grayscale(100%);
+img:hover {
+  filter: grayscale(0%);
 }
 
 /* colors */
